@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       fetch(
-        `http://127.0.0.1:8000/api/tickets?search=${encodeURIComponent(search)}&status=${encodeURIComponent(status)}`
+        `https://support-crm-bh6g.onrender.com/api/tickets?search=${encodeURIComponent(search)}&status=${encodeURIComponent(status)}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -31,7 +31,7 @@ function App() {
   }, [search, status]);
 
   const createTicket = () => {
-    fetch("http://127.0.0.1:8000/api/tickets", {
+    fetch("https://support-crm-bh6g.onrender.com/api/tickets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ function App() {
         });
 
         fetch(
-          `http://127.0.0.1:8000/api/tickets?search=${search}&status=${status}`
+          `https://support-crm-bh6g.onrender.com/api/tickets?search=${search}&status=${status}`
         )
           .then((response) => response.json())
           .then((data) => {
@@ -60,7 +60,7 @@ function App() {
   };      
     
   const viewTicket = (ticketId) => {
-    fetch(`http://127.0.0.1:8000/api/tickets/${ticketId}`)
+    fetch(`https://support-crm-bh6g.onrender.com/api/tickets/${ticketId}`)
       .then((response) => response.json())
       .then((data) => {
         setSelectedTicket(data);
@@ -69,7 +69,7 @@ function App() {
 
   const updateTicket = () => {
     fetch(
-      `http://127.0.0.1:8000/api/tickets/${selectedTicket.ticket_id}`,
+      `https://support-crm-bh6g.onrender.com/api/tickets/${selectedTicket.ticket_id}`,
       {
         method: "PUT",
         headers: {
