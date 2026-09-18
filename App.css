@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.crm-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.crm-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.crm-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 42px;
+}
+
+.crm-header p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-input,
+.status-filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.create-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #555;
+}
+
+.tickets-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tickets-section h2 {
+  margin-top: 0;
+}
+
+.no-tickets {
+  color: #777;
+}
+
+.ticket-list {
+  width: 100%;
+}
+
+.ticket-header,
+.ticket-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr 1.2fr 1fr;
+  gap: 15px;
+  padding: 14px 10px;
+  align-items: center;
+}
+
+.ticket-header {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.ticket-row {
+  border-bottom: 1px solid #eee;
+}
+
+.ticket-row:hover {
+  background-color: #f8f8f8;
+}
+
+.ticket-details {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ticket-details h2 {
+  margin-top: 0;
+}
+
+.ticket-details p {
+  margin: 10px 0;
+}
+
+.ticket-details h3 {
+  margin-top: 20px;
+}
+
+.cancel-button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #f0f0f0;
+}.ticket-details {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ticket-details h2 {
+  margin-top: 0;
+}
+
+.ticket-details p {
+  margin: 10px 0;
+}
+
+.ticket-details h3 {
+  margin-top: 20px;
+}
+
+.cancel-button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #f0f0f0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.status-badge.open {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.in-progress {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.status-badge.closed {
+  background-color: #eeeeee;
+  color: #555555;
+}
+
+.ticket-form {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ticket-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-details {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ticket-details h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.ticket-details p {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.detail-status {
+  margin-top: 15px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.ticket-details h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.note-input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.update-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.update-button:hover {
+  background-color: #555;
+}
+
+.ticket-details .cancel-button {
+  margin-top: 0;
+}
