@@ -34,7 +34,6 @@ def home():
 
 
 @app.post("/api/tickets")
-@app.post("/api/tickets")
 def create_ticket(ticket: TicketCreate, db: Session = Depends(get_db)):
 
     last_ticket = db.query(models.Ticket).order_by(
